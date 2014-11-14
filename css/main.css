@@ -1698,6 +1698,25 @@ h5 {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
+/* entire container, keeps perspective */
+.dot1.ie {
+  /*  UPDATED! front pane, placed above back */
+  /* back, initially hidden pane */
+  /*  UPDATED! flip the pane when hovered */
+}
+.dot1.ie .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.dot1.ie .back {
+  transform: rotateY(-180deg) scaleX(-1);
+}
+.dot1.ie:hover .back {
+  transform: rotateY(0deg) scaleX(-1);
+}
+.dot1.ie:hover .front {
+  transform: rotateY(180deg);
+}
 .share-wrapper {
   margin: 0 auto;
 }
