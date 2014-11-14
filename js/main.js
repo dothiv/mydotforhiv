@@ -12,7 +12,6 @@ function DotHivController() {
 
 		if(isIE){
 			$('.dot').addClass('ie');
-			console.log('switch');
 		}
 	};
 
