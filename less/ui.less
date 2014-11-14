@@ -179,6 +179,51 @@ h1, h3, h5 {
 
 // IE 
 
+/* entire container, keeps perspective */
+.dot1.ie {
+
+
+        /*  UPDATED! front pane, placed above back */
+    .front {
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+
+    /* back, initially hidden pane */
+    .back {
+        transform: rotateY(-180deg) scaleX(-1);
+    }
+        /*  UPDATED! flip the pane when hovered */
+    &:hover .back {
+        transform: rotateY(0deg) scaleX(-1);
+
+    }
+    &:hover .front {
+        transform: rotateY(180deg);
+    }
+}
+
+
+
+// /* flip speed goes here */
+// .flipper {
+//     transition: 0.6s;
+//     transform-style: preserve-3d;
+
+//     position: relative;
+// }
+
+// /* hide back of pane during swap */
+// .front, .back {
+//     backface-visibility: hidden;
+//     transition: 0.6s;
+//     transform-style: preserve-3d;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+
 
 
 /////

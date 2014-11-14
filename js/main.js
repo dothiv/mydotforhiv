@@ -10,10 +10,10 @@ function DotHivController() {
 	self.initUIBehaviour = function() {
 		$('.dot').removeClass('pre-init');
 
-		// if(isIE){
-		// 	$('.dot').removeClass('flip-container');
-		// 	console.log('switch');
-		// }
+		if(isIE){
+			$('.dot').addClass('ie');
+			console.log('switch');
+		}
 	};
 
 	self.initUIDefaultSettings = function() {
