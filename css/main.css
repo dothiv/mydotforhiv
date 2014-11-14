@@ -1623,8 +1623,8 @@ h5 {
 }
 .dot .front {
   border-radius: 100%;
-  max-width: 300px;
-  max-height: 300px;
+  width: 300px;
+  height: 300px;
   margin: 25px;
   background-color: #f40050;
 }
@@ -1641,12 +1641,6 @@ h5 {
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1000;
-}
-@media (max-width: 320px) {
-  .flip-container {
-    transform: scale(0.7, 0.7);
-    transform-origin: 50% 50%;
-  }
 }
 .dot1:hover .flipper,
 .dot1.hover .flipper {
