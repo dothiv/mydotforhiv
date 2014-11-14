@@ -1,0 +1,72 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+@screen-xxs-min:              320px;
+@screen-xs-min:               480px;
+@screen-sm-min:               768px;
+@screen-md-min:               992px;
+@screen-lg-min:               1200px;
+@screen-xl-min:               1600px;
+
+@screen-xxs-max:              (@screen-xs-min - 1);
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+@screen-lg-max:              (@screen-xs-min - 1);
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:            30px;
+@grid-gutter-width-sm:         20px;
+@grid-gutter-width-xs:         10px;
+@grid-gutter-width-xxs:        10px;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((940px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      (@screen-lg-min);
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+// Large screen / wide desktop
+@container-xlarge-desktop:      (@screen-xl-min);
+//** For `@screen-lg-min` and up.
+@container-xl:                 @container-xlarge-desktop;
+
+@text-font: 'Avenir-Roman';
+@text-size: 16px;
+
+@headings-font: 'Avenir-Black';
+@subline-font: 'Avenir-Medium';
+
+@headings-xxs-factor:              0.6;
+@headings-xs-factor:               0.7;
+@headings-sm-factor:               0.8;
+@headings-md-factor:               0.9;
+@headings-lg-factor:               1;
+@headings-xl-factor:               1.1;

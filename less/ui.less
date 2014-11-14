@@ -1,0 +1,185 @@
+body {
+    overflow-x: hidden;
+    background: url('/images/bg-pattern.svg') #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.page {
+    padding-top: 200px;
+    margin-top: 20px;
+    text-align: center;
+
+    @media (min-width: @screen-xl-min) {
+        padding-top: 250px;
+    }
+
+    @media (max-width: @screen-lg-min) {
+        padding-top: 200px;
+    }
+
+    @media (max-width: @screen-md-min) {
+        padding-top: 150px;
+    }
+
+    @media (max-width: @screen-sm-min) {
+        padding-top: 100px;
+    }
+
+    @media (max-width: @screen-xs-min) {
+        padding-top: 70px;
+    }
+
+    @media (max-width: @screen-xxs-min) {
+        padding-top: 50px;
+    }
+}
+
+
+h1, h3, h5 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.bold {
+    font-family: 'Avenir-Black';
+}
+
+.hiv-logo {
+    margin: 100px auto;
+    width: 181px;
+    height: 105px;
+    background: url('/images/dotHIV_Logo@2x.png') no-repeat;
+    background-size: 181px 105px;
+}
+
+.row-dots {
+    margin: 50px 0;
+
+}
+.col-dot {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dot {
+    margin: auto;
+
+    .wrapper {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    .holder {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0px 30px;
+    }
+
+    .front {
+        border-radius: 100%;
+        width: 300px;
+        height: 300px;
+        margin: 25px;
+        background-color: @red;
+    }
+    .back {
+        color: @white;
+        border-radius: 100%;
+        width: 350px;
+        height: 350px;
+        background-color: @red;
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000;
+
+    @media (max-width: @screen-xxs-min) {
+        transform: scale(0.7, 0.7);
+        transform-origin: 50% 50%;
+    }
+}
+
+.dot1:hover, .dot1.hover {
+    .flipper {
+      transform: rotateY(180deg);
+    }
+}
+
+.dot2:hover, .dot2.hover, .dot3:hover, .dot3.hover {
+    .front {
+        transform: scale(1.2, 1.2);
+        transform-origin: 50% 50%;
+    }
+}
+
+.flip-container.pre-init .flipper {
+    transform: rotateY(90deg);
+}
+
+.flip-container, .front, .back {
+    width: 350px;
+    height: 350px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.4s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    transition: 0.2s;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.share-wrapper {
+    margin: 0 auto;
+}
+
+.share-button {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin: 0px 5px;
+
+    &.fb {
+        background-size: contain;
+        background: url('/images/fb.svg') no-repeat;
+    }
+
+    &.twitter {
+        background-size: contain;
+        background: url('/images/twitter.svg') no-repeat;        
+    }
+}
