@@ -1622,14 +1622,16 @@ h5 {
   padding: 0px 30px;
 }
 .dot .front {
-  border-radius: 100%;
+  -webkit-border-radius: 300px;
+  border-radius: 300px;
   width: 300px;
   height: 300px;
   background-color: #f40050;
 }
 .dot .back {
   color: #ffffff;
-  border-radius: 100%;
+  -webkit-border-radius: 300px;
+  border-radius: 300px;
   width: 350px;
   height: 350px;
   margin: -25px;
