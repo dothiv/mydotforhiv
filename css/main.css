@@ -1623,9 +1623,6 @@ h5 {
   margin: -25px;
   background-color: #f40050;
 }
-.dot .back p {
-  font-size: 14px;
-}
 /* entire container, keeps perspective */
 .flip-container {
   -webkit-perspective: 1000;
