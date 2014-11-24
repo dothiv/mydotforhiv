@@ -1608,18 +1608,18 @@ h5 {
   padding: 0px 30px;
 }
 .dot .front {
-  -webkit-border-radius: 300px;
-  border-radius: 300px;
-  width: 300px;
-  height: 300px;
+  -webkit-border-radius: 250px;
+  border-radius: 250px;
+  width: 250px;
+  height: 250px;
   background-color: #f40050;
 }
 .dot .back {
   color: #ffffff;
-  -webkit-border-radius: 300px;
-  border-radius: 300px;
-  width: 350px;
-  height: 350px;
+  -webkit-border-radius: 250px;
+  border-radius: 250px;
+  width: 300px;
+  height: 300px;
   margin: -25px;
   background-color: #f40050;
 }
@@ -1649,8 +1649,8 @@ h5 {
 .flip-container,
 .front,
 .back {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 /* flip speed goes here */
 .flipper {
