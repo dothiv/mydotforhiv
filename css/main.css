@@ -1,24 +1,4 @@
-@font-face {
-  font-family: 'Avenir-Black';
-  src: url('/css/fonts/AvenirLTStd-Black.eot');
-  src: local('☺'), url('/css/fonts/AvenirLTStd-Black.woff') format('woff'), url('/css/fonts/AvenirLTStd-Black.ttf') format('truetype'), url('/css/fonts/AvenirLTStd-Black.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Avenir-Medium';
-  src: url('/css/fonts/AvenirLTStd-Medium.eot');
-  src: local('☺'), url('/css/fonts/AvenirLTStd-Medium.woff') format('woff'), url('/css/fonts/AvenirLTStd-Medium.ttf') format('truetype'), url('/css/fonts/AvenirLTStd-Medium.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Avenir-Roman';
-  src: url('/css/fonts/AvenirLTStd-Roman.eot');
-  src: local('☺'), url('/css/fonts/AvenirLTStd-Roman.woff') format('woff'), url('/css/fonts/AvenirLTStd-Roman.ttf') format('truetype'), url('/css/fonts/AvenirLTStd-Roman.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700,800,900);
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -1307,8 +1287,9 @@ th {
   }
 }
 body {
-  font-family: 'Avenir-Roman';
+  font-family: 'Source Sans Pro';
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.4;
 }
 p {
@@ -1322,7 +1303,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Avenir-Medium';
+  font-family: 'Source Sans Pro';
   line-height: 1.2;
   font-weight: 400;
   margin-top: 0;
@@ -1330,7 +1311,9 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-family: 'Avenir-Black';
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+  line-height: 1.1;
   color: #f40050;
   font-size: 88px;
   margin-bottom: 24px;
@@ -1367,7 +1350,8 @@ h1 {
   }
 }
 h2 {
-  font-family: 'Avenir-Black';
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 40px;
@@ -1475,6 +1459,8 @@ h4 {
 }
 h5 {
   color: #787878;
+  font-weight: 300;
+  line-height: 1.3;
   margin-bottom: 16px;
   font-size: 24px;
 }
@@ -1550,38 +1536,38 @@ body {
   max-width: 1600px;
 }
 .page {
-  padding-top: 200px;
+  padding-top: 40px;
   margin-top: 20px;
   text-align: center;
 }
 @media (min-width: 1600px) {
   .page {
-    padding-top: 250px;
+    padding-top: 50px;
   }
 }
 @media (max-width: 1200px) {
   .page {
-    padding-top: 200px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 992px) {
   .page {
-    padding-top: 150px;
+    padding-top: 30px;
   }
 }
 @media (max-width: 768px) {
   .page {
-    padding-top: 100px;
+    padding-top: 25px;
   }
 }
 @media (max-width: 480px) {
   .page {
-    padding-top: 70px;
+    padding-top: 20px;
   }
 }
 @media (max-width: 320px) {
   .page {
-    padding-top: 50px;
+    padding-top: 20px;
   }
 }
 h1,
@@ -1591,10 +1577,10 @@ h5 {
   margin-right: 5%;
 }
 .bold {
-  font-family: 'Avenir-Black';
+  font-weight: 400;
 }
 .hiv-logo {
-  margin: 100px auto;
+  margin: 100px auto 30px auto;
   width: 181px;
   height: 105px;
   background: url('/images/hiv_logo.svg') no-repeat;
@@ -1636,9 +1622,6 @@ h5 {
   height: 350px;
   margin: -25px;
   background-color: #f40050;
-}
-.dot .back p {
-  font-size: 14px;
 }
 /* entire container, keeps perspective */
 .flip-container {
@@ -1735,4 +1718,12 @@ h5 {
 .share-button.twitter {
   background-size: contain;
   background: url('/images/twitter.svg') no-repeat;
+}
+.footer {
+  margin-bottom: 60px;
+}
+.footer a {
+  margin: 0 10px;
+  color: #787878;
+  font-size: 20px;
 }
