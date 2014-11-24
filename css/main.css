@@ -1725,5 +1725,9 @@ h5 {
 .footer a {
   margin: 0 10px;
   color: #787878;
+  text-decoration: none;
   font-size: 20px;
+}
+.footer a:hover {
+  text-decoration: underline;
 }
