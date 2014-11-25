@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+var dot = require('dot');
+var fs = require('fs');
+var fields = require('../src/defaults');
+
+
+fs.readFile('./index.dot', function(err, templateContent){
+	if (err) {
+		console.log(err);
+		return process.exit(1);
+	}
+
+	var template = dot.template(templateContent);
+
+	fs.readFile('./lib/index.min.js', function(err, sourceContent){
+		if (err) {
+			console.log(err);
+			return process.exit(1);
+		}
+
+		var data = {
+			fields: fields,
+			source: sourceContent
+		};
+
+		fs.writeFile('./index.html', template(data, function(err){
+			if (err) {
+				console.log(err);
+				return process.exit(1);
+			}
+			process.exit(0);
+		}));
+	});
+});

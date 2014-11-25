@@ -1,0 +1,21 @@
+{
+    "replaced": ".",
+    "prefix": "dothiv",
+    "queries": ["p"],
+    "diameter": "4px",
+    "offset": "16px",
+    "dotBackground": "#ff0000",
+    "popoverBackground": "#ffffff",
+    "popoverColor": "#000000",
+    "popoverFontSize": "14px",
+    "headline": "A dot making all the difference.",
+    "headlineColor": "#e00073",
+    "headlineFontweight": "bold",
+    "text": "For every single click on a .hiv site we donate to the fight against AIDS.",
+    "buttonText": "Help now",
+    "buttonHref": "https://click4life.hiv/en/",
+    "buttonTarget": "_blank",
+    "buttonBackground": "#e00073",
+    "buttonHoverBackground": "#ff47a5",
+    "buttonColor": "#ffffff"
+}
