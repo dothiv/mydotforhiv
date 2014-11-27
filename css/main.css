@@ -190,10 +190,6 @@ th {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.img-responsive {
-  width: 100%;
-  max-width: 100%;
-}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1605,7 +1601,7 @@ h5 {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  padding: 0px 30px;
+  padding: 0px 25px;
 }
 .dot .front {
   -webkit-border-radius: 250px;
@@ -1628,15 +1624,13 @@ h5 {
   -webkit-perspective: 1000;
   perspective: 1000;
 }
-.dot1:hover .flipper,
-.dot1.hover .flipper {
+.dot-a:hover .flipper,
+.dot-a.hover .flipper {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-.dot2:hover .front,
-.dot2.hover .front,
-.dot3:hover .front,
-.dot3.hover .front {
+.dot-b:hover .front,
+.dot-b.hover .front {
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
   -webkit-transform-origin: 50% 50%;
@@ -1684,22 +1678,22 @@ h5 {
   transform: rotateY(180deg);
 }
 /* entire container, keeps perspective */
-.dot1.ie {
+.dot-a.ie {
   /*  UPDATED! front pane, placed above back */
   /* back, initially hidden pane */
   /*  UPDATED! flip the pane when hovered */
 }
-.dot1.ie .front {
+.dot-a.ie .front {
   z-index: 2;
   transform: rotateY(0deg);
 }
-.dot1.ie .back {
+.dot-a.ie .back {
   transform: rotateY(-180deg) scaleX(-1);
 }
-.dot1.ie:hover .back {
+.dot-a.ie:hover .back {
   transform: rotateY(0deg) scaleX(-1);
 }
-.dot1.ie:hover .front {
+.dot-a.ie:hover .front {
   transform: rotateY(180deg);
 }
 .share-wrapper {
