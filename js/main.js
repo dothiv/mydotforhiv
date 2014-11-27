@@ -40,6 +40,10 @@ function DotHivController() {
 			ga('send', 'event', 'button', 'click', 'click on deeplink in circle 3');
 		});
 
+		$('.dot4link').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'click on deeplink in circle 4');
+		});
+
 	};
 
 
